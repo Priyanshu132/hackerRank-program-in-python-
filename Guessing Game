@@ -1,0 +1,21 @@
+import random as rd
+n=rd.randint(1,9)
+no_of_guess=0
+k=input("Guess the random number between 1 to 9 or write exit to end the game")
+if k=="exit":
+	exit()
+temp=int(k)
+while True:
+	no_of_guess+=1
+	
+	if temp<n:
+		print("too low")
+	if temp>n:
+		print("too high")
+	if temp==n:
+		print("Exactly right")
+	k=input("Guess the random number between 1 to 9 or write exit to end the game")
+	if k=="exit":
+		break
+	temp=int(k)
+print("Guess taken ",no_of_guess)
