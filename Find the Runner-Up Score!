@@ -1,0 +1,12 @@
+if __name__ == '__main__':
+    n = int(raw_input())
+    arr = map(int, raw_input().split())
+    i=1
+    arr.sort()
+   
+    while i<len(arr):
+        if arr[len(arr)-i]>arr[len(arr)-i-1]:
+            break
+        else:
+            i+=1
+    print(arr[len(arr)-i-1])
