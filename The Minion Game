@@ -1,0 +1,21 @@
+def minion_game(string):
+    vowels="AEIOU"
+    stuart=0
+    Kevin=0
+    for i in range(len(string)):
+        if string[i] in vowels:
+                Kevin=Kevin+len(string)-i
+        else:
+               stuart=stuart+len(string)-i
+    if stuart==Kevin:
+        print("Draw")
+    else:
+        m=max(stuart,Kevin)
+        if m==stuart:
+            print("Stuart",m)
+        else:
+            print("Kevin",m)
+
+if __name__ == '__main__':
+    s = input()
+    minion_game(s)
