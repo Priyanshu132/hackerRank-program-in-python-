@@ -1,0 +1,13 @@
+m=int(input())
+M=set(input().split())
+n=int(input())
+N=set(input().split())
+d=list((M.difference(N)).union((N.difference(M))))
+for i in range(len(d)):
+    d[i]=int(d[i])
+for i in range(len(d)):
+    print(min(d))
+    d.remove(min(d))
+
+
+
