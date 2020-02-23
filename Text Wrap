@@ -1,0 +1,13 @@
+import textwrap
+
+def wrap(string, max_width):
+    text=textwrap.TextWrapper(max_width)
+    text1=text.wrap(string)
+    for i in text1:
+        print(i) 
+    return ""
+
+if __name__ == '__main__':
+    string, max_width = input(), int(input())
+    result = wrap(string, max_width)
+    print(result)
