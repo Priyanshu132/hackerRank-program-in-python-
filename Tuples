@@ -1,0 +1,10 @@
+if __name__ == '__main__':
+    n = int(input())
+    temp=[]
+    k=input().split()
+    for i in range(len(k)):
+        temp.append(int(k[i]))
+    tuple1=tuple(temp)
+
+ 
+    print(hash(tuple1))
