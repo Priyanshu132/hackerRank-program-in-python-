@@ -1,0 +1,17 @@
+from collections import Counter
+n=int(input())
+lis=input().split()
+k=int(input())
+
+for i in range(n):
+    lis[i]=int(lis[i])
+f=Counter(lis)
+rupee=0
+for i in range(k):
+    s=input().split()
+    s[0]=int(s[0])
+    s[1]=int(s[1])
+    if f[s[0]]>0:
+        rupee+=s[1]
+        f[s[0]]-=1
+print(rupee)
