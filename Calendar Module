@@ -1,0 +1,5 @@
+import calendar
+import datetime
+n=input()
+day = datetime.datetime.strptime(n, '%m %d %Y').weekday() 
+print(calendar.day_name[day].upper())
