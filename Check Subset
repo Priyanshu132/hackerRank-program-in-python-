@@ -1,0 +1,17 @@
+n=int(input())
+for i in range(n):
+    k=int(input())
+    A=input().split()
+    k1=int(input())
+    B=input().split()
+    c=0
+    for j in A:
+        if j in B:
+            c+=1
+        else:
+            c=0
+            break
+    if c==0:
+        print("False")
+    else:
+        print("True")
