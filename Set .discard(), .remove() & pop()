@@ -1,0 +1,17 @@
+n = int(input())
+s =input().split()
+se=set()
+for i in range(n):
+    s[i]=int(s[i])
+    se.add(s[i])
+k=int(input())
+for i in range(k):
+    c=input().split()
+    if c[0]=='pop':
+        se.pop()
+    if c[0]=='remove':
+        se.remove(int(c[1]))
+    if c[0]=='discard':
+        se.discard(int(c[1]))
+
+print(sum(se))
